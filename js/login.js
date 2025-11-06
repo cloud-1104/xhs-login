@@ -66,7 +66,11 @@ module.exports = {
 };
 
 // 测试代码(可取消注释)
-// console.log(seccore_signv2('/api/sns/web/v1/login/qrcode/create{"qr_type":1}', ""))
+console.log("\nmnsv2补环境输出:"+mnsv2('/api/sns/web/v1/login/qrcode/create{"qr_type":1}', ""))
+
+
+
+console.log("\n最终x-s输出:"+seccore_signv2('/api/sns/web/v1/login/qrcode/create{"qr_type":1}', ""))
 
 //登录
 // console.log(seccore_signv2('/api/sns/web/v1/login/qrcode/status?qr_id=142561762397376923&code=493677', ""))

@@ -1,7 +1,7 @@
 
 !(function(){
     const $toString = Function.prototype.toString;
-    const symbol = Symbol();    // 独一无二的属性
+    const symbol = Symbol();
     const myToString = function (){
         return typeof this === 'function' && this[symbol] || $toString.call(this);
     }
