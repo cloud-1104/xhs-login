@@ -1,38 +1,4 @@
-# 小红书登录二维码获取工具
-
-一个用于获取小红书登录二维码并自动检测扫码状态的 Python 工具。
-
-## 环境依赖
-
-- Python 3.6+
-- Node.js (用于生成签名)
-
-## 安装依赖
-
-```bash
-pip install requests pillow qrcode loguru
-```
-
-## 使用方法
-
-```bash
-python xhs_login.py
-```
-
-运行后将自动：
-1. 生成 webId
-2. 获取登录二维码并保存为 `login_qrcode.png`
-3. 开始轮询等待扫码
-
-## 项目结构
-
-```
-.
-├── xhs_login.py        # 主程序
-├── js/
-│   └── login.js        # 签名生成脚本
-└── login_qrcode.png    # 生成的二维码图片
-```
+#xhs补环境js
 
 ## 免责声明
 
@@ -83,15 +49,3 @@ SOFTWARE.
 ## 作者
 
 cloud-1104
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request。
-
-## 更新日志
-
-### v1.0.0 (2025-11-06)
-- 初始版本发布
-- 实现基础登录二维码获取功能
-- 集成 loguru 日志系统
-- 添加完整的开源协议和免责声明
